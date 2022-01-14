@@ -1,14 +1,20 @@
 package com.vetalitet.gdlib
 
 import android.app.Application
+import android.graphics.Color
+import com.vetalitet.gdsdk.GDSdk
+import com.vetalitet.gdsdk.GDTheme
 
 class SdkApplication: Application() {
 
     override fun onCreate() {
         super.onCreate()
-        //GDSdk.provideTheme()
+        GDSdk().provideTheme(createTheme())
     }
 
-    //fun createTheme() = GDTheme()
+    private fun createTheme() = GDTheme.Builder()
+        .bgColor(Color.BLUE)
+        .textColor(Color.YELLOW)
+        .build()
 
 }
