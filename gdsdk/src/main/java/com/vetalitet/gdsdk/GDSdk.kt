@@ -5,8 +5,8 @@ import com.vetalitet.themes.ThemeProvider
 
 class GDSdk {
 
-    fun provideTheme(theme: GDTheme) {
-        //ThemeProvider.setThemes(mapThemes(theme))
+    suspend fun provideTheme(theme: GDTheme) {
+        ThemeProvider.setTheme(mapThemes(theme))
     }
 
     private fun mapThemes(theme: GDTheme): Theme {
