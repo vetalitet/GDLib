@@ -4,6 +4,7 @@
 
     <application>
         <activity android:name=".GDSdkActivity" />
+        <activity android:name="com.vetalitet.ui.SdkActivity" />
     </application>
 
 </manifest>
