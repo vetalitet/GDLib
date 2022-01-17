@@ -13,7 +13,7 @@ class SdkApplication : Application() {
     }
 
     private fun createTheme() = GDTheme.Builder()
-        .bgColor(Color.YELLOW)
+        .bgColor(Color.RED)
         .textColor(Color.BLUE)
         .build()
 
